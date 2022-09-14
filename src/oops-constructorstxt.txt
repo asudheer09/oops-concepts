@@ -1,0 +1,192 @@
+OOPS:
+====
+.java ----> compile -->.class ----> when we run the program inside jvm there is class loader subsystem---> will load the class into jvm
+
+Types of variables : 3
+===============
+1. Local ( method/ constructor /block)
+	scope: within method/block /constructor
+	default values provided by programmer.
+	
+2. Instance ( inside a class without static modifier)
+	scope : when an obj is created that time instance will be created, when object is destoryed then instance 
+	variables will be destoryed. 
+	default values will be provided by jvm.
+	for every object a seperate copy of instance varaibles will be created.
+	
+3. static ( inside a class with static modifier)
+   at the time of class loading the static variables will be created.
+   scope or life time : class 
+   only one copy will be created that will be shared by all the objects.
+   
+   Constructor: is a special method.
+   It provides values to the varaibles inside the class.
+   
+   In java we have 2 types of constructors
+   1. default or zero arg-constructor  ( If we dont create any constructor in our class then jvm will create default constructor)
+   2. parameterized 
+   
+   constructor rules:
+   1. constructor name and class name should match.
+   2. constructor does not have any return type include void.
+   3. we can write any no of constructors in a class ( Constructor overlaoding)
+   4. If we dont create any constructor then jvm will create default constructor.
+   5. If we create any constructor then jvm will not create default constructor.
+   
+   
+   // access specifiers
+   
+   private: we can access with in the class only
+   public 
+   protected
+   default
+   
+   
+  int  temp;
+  
+  private int i;
+  
+  public int j;
+  
+   a=10;
+   b=20;
+   
+   a=20;
+   b=10;
+   
+   temp=a; // temp=10;
+   a=b; //a=20
+   b=temp; //b=10
+   
+   oops:
+   ====
+   1. class
+   2. object
+   3. inheritance
+   4. polymorphism
+   5. encapsulation
+   6. abstraction
+   
+ 1. class : class is a blue print to create object.
+ class is a logical entity.
+ If we create a class you can create any no of object.
+ class is not physically exist.
+ 
+ Example : Car, Person, Employee, Flower,Student
+ 
+ 2. Object: is real entity.
+ it is physically exist.
+ we can create many objects using single class.
+ object contains state and behaviour. (state =data /varaibles , behaviours=methods)
+ 
+ 3. inheritance: inheritance is the process by which one object can acquire the properties of another object.
+ advanatge: code reusabilty.
+ how to achieve this inheritence is using extends keyword.
+ example:
+  class A{
+  
+  //data
+  //methods
+  
+  }
+  
+  class B extends A{
+  
+  // A data
+  // A methods
+  
+  // B data
+  
+  // B methods
+ 
+ }
+ 
+ 4. polymorphism
+ 
+ poly= many
+ morphism= forms
+one name , multiple forms
+one task can be perfromed in different ways.
+
+2 types:
+1. compiletime polymorphism ( example : method overloading)
+2. runtime polymorphism  ( example : method overriding)
+  
+method overloading--> writing mulitple methods with same name but different arguements.
+method overriding   --> re-writing the parent class method in to the child class.
+ 
+ class A{
+ 
+public void method1(){
+}
+
+public void method1(String a){
+}
+
+public void method1(int a){
+}
+
+}
+
+class A{
+
+public void run(){
+}
+
+}
+
+class B extends A{
+
+public void run(){
+}
+
+}
+ 
+ 5 Encapsulation
+ =============
+ wrapping of data and behaviours into single unit.
+ 
+ Example: class : contains data and behaviours.
+ 
+ The main advanatge with encapsulation is we can achieve security.
+ So how we can achieve security is by declearing all the varaibles as private.
+ If we declearing varaibles as private we cant access that data outside, so then we need setter and getter to access 
+ that private data.
+ 
+ 6. abstraction
+ hiding the unnecessary things and showing necessary things.
+ example : ATM  ( withdraw , deposit, balance enquiry)
+				car driving: 
+ In java we can achieve abstraction using interfaces and abstract classes.
+  
+  
+  In one project ---> we can create any of packages
+  in one package ---> we can create any no of classes.
+  
+  package : group of related classes and interfaces.
+  
+  to create package : package com.company.hr;
+  
+  
+  
+  
+   
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+   
+   
+   
+   
+   
+   
+   
+   
